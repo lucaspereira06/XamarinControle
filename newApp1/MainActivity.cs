@@ -2,9 +2,9 @@
 using Android.Widget;
 using Android.OS;
 
-namespace newApp1
+namespace Controle.App
 {
-	[Activity(Label = "newApp1", MainLauncher = true)]
+	[Activity(Label = "Controle", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
