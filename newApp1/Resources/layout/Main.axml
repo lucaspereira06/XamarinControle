@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#000000">
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:layout_weight="1">
         <TextView
             android:text="R$ 0.00"
@@ -14,49 +15,86 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:layout_weight="1"
-            android:textSize="40dp"
+            android:textSize="55dp"
             android:layout_gravity="center_vertical"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:textColor="#ff2991ca" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:padding="15dp">
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:padding="6dp">
-            <TextView
-                android:text="Conta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp" />
-            <TextView
-                android:text="Dinheiro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:layout_marginTop="12dp" />
+            android:paddingTop="20dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="6dp">
+                <TextView
+                    android:text="Conta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#FFFFFFFF" />
+                <TextView
+                    android:text="Dinheiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <EditText
+                    android:text="0.00"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF" />
+                <EditText
+                    android:text="0.00"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1">
-            <EditText
-                android:text="0.00"
-                android:inputType="numberDecimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:text="0.00"
-                android:inputType="numberDecimal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            <TextView
+                android:text="R$ 0.00"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="35dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#ff2ed746" />
+            <TextView
+                android:text="R$ 0.00"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="35dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="#ffd32222" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
